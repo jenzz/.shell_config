@@ -86,14 +86,19 @@ alias rmorig="find . -type f -name \*.orig -exec rm {} \;"
 alias ga="git add -A .; gs"
 alias gb="git branch"
 alias gc="git commit"
+alias gca="git commit --amend"
+alias gcm="git commit -m"
 alias gcl="git clone"
+alias gf="git fetch"
 alias gs="git status"
 alias go="git checkout"
 alias gpl="git pull"
 alias gplr="git pull --rebase"
 alias gp="git push"
 alias gpf="git push --force"
+alias gra="rmorig; git rebase --abort"
 alias grc="rmorig; git rebase --continue"
+alias gma="git merge --abort"
 alias gmt="git mergetool"
 alias gi="git update-index --assume-unchanged"
 alias gilist="git ls-files -v | grep -e '^[hsmrck]'"
@@ -106,13 +111,15 @@ wd
 echo ''
 echo '============================='
 echo 'Updating Homebrew...'
-brew update
-brew upgrade
+brew update --all
+brew upgrade --all
 echo '============================='
 echo 'Cleaning up Homebrew...'
 brew cleanup
+brew cask cleanup
 echo 'Cleanup done.'
 echo '============================='
 echo 'Doctor Homebrew...'
 brew doctor
+brew cask doctor
 echo '============================='
