@@ -8,9 +8,9 @@ function get_pwd() {
 }
 
 function battery_charge() {
-  if [ -e ~/.oh-my-zsh/batcharge.py ]
+  if [ -e ~/.oh-my-zsh/scripts/batcharge.py ]
   then
-    echo `python ~/.oh-my-zsh/batcharge.py`
+    echo `python ~/.oh-my-zsh/scripts/batcharge.py`
   else
     echo ''
   fi
@@ -36,7 +36,7 @@ function put_spacing() {
 
   local spacing=""
   for i in {1..$termwidth}; do
-    spacing="${spacing} " 
+    spacing="${spacing} "
   done
   echo $spacing
 }
