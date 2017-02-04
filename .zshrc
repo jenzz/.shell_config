@@ -111,8 +111,8 @@ wd
 echo ''
 echo '============================='
 echo 'Updating Homebrew...'
-brew update --all
-brew upgrade --all
+brew update
+brew upgrade
 echo '============================='
 echo 'Cleaning up Homebrew...'
 brew cleanup
