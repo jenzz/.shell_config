@@ -105,7 +105,9 @@ alias gma="git merge --abort"
 alias gmt="git mergetool"
 alias gi="git update-index --assume-unchanged"
 alias gilist="git ls-files -v | grep -e '^[hsmrck]'"
+alias adbclear="adb shell pm clear"
 alias adbrestart="adb kill-server; adb start-server; adb devices"
+alias adbintent="adb shell am start -a android.intent.action.VIEW -d"
 
 # Start in working directory
 wd
