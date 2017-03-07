@@ -111,18 +111,20 @@ alias adbrestart="adb kill-server; adb start-server; adb devices"
 wd
 
 # Update & Clean up Homebrew
-echo ''
-echo '============================='
-echo 'Updating Homebrew...'
-brew update
-brew upgrade
-echo '============================='
-echo 'Cleaning up Homebrew...'
-brew cleanup
-brew cask cleanup
-echo 'Cleanup done.'
-echo '============================='
-echo 'Doctor Homebrew...'
-brew doctor
-brew cask doctor
-echo '============================='
+brewupdate() {
+  echo ''
+  echo '============================='
+  echo 'Updating Homebrew...'
+  brew update
+  brew upgrade
+  echo '============================='
+  echo 'Cleaning up Homebrew...'
+  brew cleanup
+  brew cask cleanup
+  echo 'Cleanup done.'
+  echo '============================='
+  echo 'Doctor Homebrew...'
+  brew doctor
+  brew cask doctor
+  echo '============================='
+}
