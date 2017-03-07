@@ -1,6 +1,9 @@
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 export ANDROID_HOME=/usr/local/Cellar/android-sdk/(insert-current-sdk)
+export JAVA7_HOME=`/usr/libexec/java_home -v 1.7`
+export JAVA8_HOME=`/usr/libexec/java_home -v 1.8`
+export JAVA_HOME=$JAVA8_HOME
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
