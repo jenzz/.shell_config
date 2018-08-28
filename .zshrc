@@ -123,7 +123,6 @@ brewupdate() {
   echo '============================='
   echo 'Cleaning up Homebrew...'
   brew cleanup
-  brew cask cleanup
   echo 'Cleanup done.'
   echo '============================='
   echo 'Doctor Homebrew...'
